@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Lora');
+
+/* Defaults */
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: 'Bree Serif', serif;
+}
+a, p, span,
+div, input, button,
+footer, header {
+  font-family: 'Lora', serif;
+}
+
+/* Helpers */
+.text-center {
+  text-align: center !important;
+}
+.hidden {
+  display: none !important;
+}
+
+/* Presets */
+#main {
+  justify-content: center;
+
+  display: -webkit-flex; /* Safari */
+  display: flex;
+
+  width: 100vw;
+}
+.content {
+  padding: 15px;
+
+  -webkit-flex: 0; /* Safari 6.1+ */
+  -ms-flex: 0; /* IE 10 */
+  flex: 0;
+}
+.title {
+  font-size: 3em;
+  line-height: 50px;
+}
+.btn {
+  font-size: 1.3em;
+
+  border: 1px rgb(238, 238, 238) solid;
+  border-radius: 10px;
+
+  padding: 15px;
+  width: 200px;
+}
