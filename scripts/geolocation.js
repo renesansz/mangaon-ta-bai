@@ -46,7 +46,7 @@ var Geolocation = (function () {
                 getCurrentPosition().then(function (position) {
                     var dummyDiv = document.createElement("div");
                     var curLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-                    var service = new google.maps.places.PlacesService(document.body.appendChild(dummyDiv));
+                    var service = new google.maps.places.PlacesService(document.querySelector("footer").appendChild(dummyDiv));
                     var request = {
                         location: curLocation,
                         radius: "1000", // In meters

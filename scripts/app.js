@@ -27,7 +27,7 @@
 
         var goto = places[Math.floor((Math.random() * (places.length - 1)))];
 
-        document.querySelector(".search-result span").innerHTML = goto.name + " is the place to be!";
+        document.querySelector(".search-result p").innerHTML = goto.name + " is the place to be!";
     }
 
     function searchNearbyRestaurants(e) {

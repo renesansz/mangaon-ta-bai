@@ -21,18 +21,21 @@ footer, header {
 
 /* Presets */
 #main {
-  justify-content: center;
-
   display: -webkit-flex; /* Safari */
   display: flex;
 
+  -webkit-flex-direction: column; /* Safari 6.1+ */
+  flex-direction: column;
+
+  position: relative;
+
   width: 100vw;
+  height: 100vh;
 }
 .content {
   padding: 15px;
 
   -webkit-flex: 0; /* Safari 6.1+ */
-  -ms-flex: 0; /* IE 10 */
   flex: 0;
 }
 .title {
@@ -40,11 +43,34 @@ footer, header {
   line-height: 50px;
 }
 .btn {
+  cursor: pointer;
+
+  background: #FFF;
+
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+
   font-size: 1.3em;
 
   border: 1px rgb(238, 238, 238) solid;
   border-radius: 10px;
+  box-shadow: 1px 1px 5px #EEE;
 
   padding: 15px;
   width: 200px;
+}
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 1px 5px 5px #EEE;
+}
+.btn:active {
+  transform: translateY(4px);
+  box-shadow: 1px 1px 5px #EEE;
+}
+.btn-green {
+  background-color: #4CAF50;
+  color: #FFF;
+}
+footer {
+  padding: 0 20px 20px;
 }
