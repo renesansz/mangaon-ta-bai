@@ -45,7 +45,6 @@ var Geolocation = (function () {
             return new Promise(function (resolve, reject) {
                 getCurrentPosition().then(function (position) {
                     var dummyDiv = document.createElement("div");
-                        dummyDiv.classList.add("hidden");
                     var curLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
                     var service = new google.maps.places.PlacesService(document.body.appendChild(dummyDiv));
                     var request = {
