@@ -4,7 +4,7 @@
   "description": "Find restaurants nearby",
   "main": "index.js",
   "scripts": {
-    "start": "live-server --port=3004"
+    "start": "live-server --port=8000 --ignore=**/.git/** --no-browser"
   },
   "repository": {
     "url": "git@github.com:renesansz/mangaon-ta-bai.git",
